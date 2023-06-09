@@ -1,0 +1,50 @@
+.titre{
+    color:#21A3A1;
+    padding:5px;
+}  
+.pad{
+ 
+}
+.footabout{
+      
+    width: 1673px;
+    padding: 0px;
+     padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.paragraphe{
+    padding-top: 20px;
+}
+.p1{
+
+}
+.space{
+    padding: 25px;
+    font-weight: bold;
+    font-size: 20px; 
+    color:white;
+   
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width:  1675px;
+    height: 1009px;
+    background-color: rgba(128, 128, 128, 0.7); /* Adjust the RGBA values and alpha as needed */
+  }
+  .content {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  
