@@ -1,7 +1,7 @@
 import React from './home.css';
 import backAbout from './backAbout.jpg';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 import img from './playstore.jpg';
 import img2 from './AppStore.jpg';
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
    
    <div className='back' style={{ height:'1000px', backgroundImage: `url(${backAbout})`, backgroundSize: "cover" }}>
   <Navbar/>    
- <from >
+ <form >
     <div className='details' >
        <h2 style={{color:'#21A3A1'}} >Besoin d'un taxi?</h2>
       <h1 style={{color:'white'}}>Partagez le taxi,
@@ -29,12 +29,12 @@ const Home = () => {
         </a>
         </div>
           </form>
-         
-    </from>
-   <form className='foot'  style={{ backgroundColor: 'transparent' }}>
+          <Footer  /> 
+    </form>
+   {/* <form className='foot'  style={{ backgroundColor: 'transparent' }}>
    <Footer  /> 
-   </form>
-
+   </form> */}
+ 
     </div>
   );
 };

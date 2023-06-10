@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import SignUp from './components/SignUp';
-import SignUp1 from './components/SignUp1';
-import SignUp2 from './components/SignUp2';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
+import SignUp from './components/signup/SignUp';
+import SignUp1 from './components/signup/SignUp1';
+import SignUp2 from './components/signup/SignUp2';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Services from './components/service/Services';
+import Contact from './components/contact/Contact';
 import './App.css'
 
 function App() {

@@ -1,11 +1,11 @@
 import React from 'react';
 import img from './contact.jpg';
 import img1 from './contact2.jpg';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 import logo from './playstore.jpg';
 import logo1 from './AppStore.jpg';
-import Conta from './Conta';
+import Conta from '../Conta';
 import { Link } from 'react-router-dom';
 import CallIcon from '@mui/icons-material/Call';
 import InstagramIcon from '@mui/icons-material/Instagram';

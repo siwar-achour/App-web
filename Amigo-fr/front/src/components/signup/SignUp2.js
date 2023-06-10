@@ -3,8 +3,8 @@ import React from 'react';
 import img from './signup.jpg';
 import img1 from './playstore.jpg';
 import img2 from './AppStore.jpg';
-import Footer from './Footer';
-import Navbar from './Navbar';
+import Footer from '../footer/Footer';
+import Navbar from '../navbar/Navbar';
 import { Link } from 'react-router-dom';
 import './signup2.css';
 const SignUp2 = () => {
@@ -67,7 +67,7 @@ Essayez dès à présent le premier service de taxi sous <br/> le concept de par
       </div>
     </div>
     <form className='footabout' style={{ backgroundColor: 'transparent' }}>
-        <Footer />
+        {/* <Footer /> */}
       </form>
   
     </div>

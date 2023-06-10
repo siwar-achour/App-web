@@ -1,6 +1,6 @@
 //import './signUp.css';
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "../footer/Footer";
+import Navbar from "../navbar/Navbar";
 const Services = () => {
   return (
     <div>
@@ -23,10 +23,10 @@ const Services = () => {
        la notion de partage de course, vous n’aurez plus votre Taxi sans clients, des courses bien définies avec la meilleure
        application de communication entre le chauffeur et le client. N’attendez pas longtemps pour un client, Amigo gére les
        détails de vos courses !
+       
+  <Footer  /> 
       </p>
-      <form className='foot'  style={{ backgroundColor: 'transparent' }}>
-   <Footer  /> 
-   </form>
+ 
     </div>
   );
 };

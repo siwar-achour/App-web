@@ -3,11 +3,11 @@ import React from 'react';
 import img from './signup.jpg';
 import img1 from './playstore.jpg';
 import img2 from './AppStore.jpg';
-import Footer from './Footer';
-import Navbar from './Navbar';
+import Footer from '../footer/Footer';
+import Navbar from '../navbar/Navbar';
 import { Link } from 'react-router-dom';
-import './signup1.css';
-const SignUp1 = () => {
+import './signup.css';
+const SignUp = () => {
   return (
     <div>
    
@@ -34,35 +34,37 @@ Essayez dès à présent le premier service de taxi sous <br/> le concept de par
     
       <  div  className='formulaire'>
         <div className='num'style={{ marginTop: '0px' }} >
-        <input className='nume1' type="text" id="1"  placeholder='1' style={{marginRight:'5px' }}/>
+        <input className='nume11' type="text" id="1"  placeholder='1' style={{marginRight:'5px' }}/>
         <input className='liaison' type="text" id=""  placeholder='' style={{marginRight:'5px' }}/>
-        <input className='nume22' type="text" id="2"  placeholder='2' style={{marginRight:'5px' }}/>
+        <input className='nume' type="text" id="2"  placeholder='2' style={{marginRight:'5px' }}/>
         <input className='liaison' type="text" id="2"  placeholder=''style={{marginRight:'5px' }}/>
-        <input className='nume33' type="text" id="3"  placeholder='3' />
+        <input className='nume' type="text" id="3"  placeholder='3' />
         </div>
-   
-        <input  className='inputsign'  type="CIN" id="CIN" name="CIN" placeholder='CIN' style={{ marginTop: '30px', marginBottom: '10px'}} />
-       <input  className='inputsign' d="permis" name="permis" placeholder='Numéro du Permis'  style={{ marginTop: '30px', marginBottom: '10px'}}></input>
-       <input  className='inputsign'  type="license" id="license" name="license" placeholder='Numéro de la licence taxi' style={{ marginTop: '30px', marginBottom: '10px'}} />
-<div className='enregistrer'>
-<Link to='/SignUp'>
-      <button  className='buttonsign1'  type="submit"  style={{ marginTop: '35px', marginBottom: '0px' , marginLeft:'0px' }}>Previous</button>
-      </Link>
-<Link to='/SignUp2'>
-      <button  className='buttonsign1'  type="submit"  style={{ marginTop: '35px', marginBottom: '0px' , marginLeft:'30px' }}>Suivant</button>
-      </Link>
+    <div className='name'>
+    <input className='inputsign' type="text" id="name" name="name" placeholder='Nom' style={{ marginTop: '50px' , marginRight:'5px' }} />
+      <input  className='inputsign' type="text" id="prenom" name="prenom" placeholder='Prenom' style={{ marginTop: '50px' }} />
+      
+    </div>
      
-      </div>
+      <input  className='inputsign'  type="email" id="email" name="email" placeholder='Email' style={{ marginTop: '30px', marginBottom: '10px'}} />
+
+   
+      <input  className='inputsign' d="phone" name="phone" placeholder='Numéro de Téléphone'  style={{ marginTop: '30px', marginBottom: '10px'}}></input>
+<Link to="/SignUp1">
+      <button  className='buttonsign'  type="submit"  style={{ marginTop: '35px', marginBottom: '10px' , marginLeft:'0px' }}>Suivant</button>
+      </Link>
       </div>
       </form>
       
       </div>
+      {/* <form className='footabout' style={{ backgroundColor: 'transparent' }}>
+        {<Footer /> }
+      </form> */}
+  { <Footer  />  }
     </div>
-    <form className='footabout' style={{ backgroundColor: 'transparent' }}>
-        <Footer />
-      </form>
+   
   
     </div>
   );
 };
-export default SignUp1;
+export default SignUp;
